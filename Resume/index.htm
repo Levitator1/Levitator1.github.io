@@ -44,6 +44,17 @@
             margin-top: 2em;
             margin-bottom: 2em;
         }
+
+	div.section hr
+	{
+		size: 3;
+		color: #000000;
+	}
+
+	div.section li span
+	{
+	     margin-left: 5em;
+	}
         
         li em
         {
@@ -75,23 +86,38 @@
             list-style-type: square;
         }
 
+	div.job h3.title
+	{
+	    font-style: italic;
+	}
+
 	div.header
 	{
-	    background-color: #C0C0C0;	
+	    background-color: #B0B0B0;	
 	}        
 
-        div.header h1
+        div.header
         {
             margin-bottom: .3em;
         }      
         
-        div.header p
+        div.header > *
         {
             font-size: x-small;
             font-family: Arial;                        
-            margin-bottom: 1em;
+            margin-bottom: .1em;
         }
-                
+
+	div.header h1 
+	{
+ 	    font-size: medium;
+	}
+
+	div.link_bar span
+ 	{
+	   margin-right: 1em;
+	}        
+
         </style>       
 </head>
 <body style="text-align: left">
@@ -101,28 +127,40 @@
 <p>
 <b>Computer programmer</b>
 <br/>
-   <a href="mailto:j.a.batista1@gmail.com">j.a.batista1@gmail.com</a></p>
-   
+	<div class="link_bar">
+	   <span ><a href="mailto:Levitat0r@protonmail.com">Levitat0r@protonmail.com</a></span>
+	   <span><a href="portfolio.htm">Portfolio</a></span>
+	   <span><a href="https://github.com/Levitator1"><svg height="12" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="12" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>https://github.com/Levitator1</a></span>
+	</div>
 </div>
+
 
 <div class="section">
 <h2> Objective </h2>
+<hr>
 
 <p>
 To apply principles of software development and information technology as
 a means to productivity; to use technology to create value for the benefit 
 of my employer and myself.
 </p>
-
 </div>
-
 
 <div class="section">
 <h2> Skills </h2>
+<hr>
     <ul>
-	<li><em>Domains: </em>Order Processing and Logistics, Scientific/Laboratory Computer Vision,
-		Industrial QC Automation</em></li>
-        <li><em>Languages (computer): </em>C++, C, SQL, Matlab, HTML, Java, C# </li>
+	<li>
+		<div>
+		<em>Domains:</em>
+		</div>
+		<div>
+		<span>Order processing and logistics, Scientific/laboratory computer vision, industrial QC automation, </span><br>
+		<span>network IO/protocol development over raw TCP/IP, hardware IO, embedded systems, </span><br>
+		<span>integration of disparate systems, unique or specialized machine interfaces</span><br>
+		</div>
+	</li>
+        <li><em>Languages (computer): </em>C++, C, Java, SQL, Matlab, HTML, C# </li>
         <li><em>Languages (natural):</em> English, Spanish</li> 
         <li><em>DBMS:</em> PostgreSQL, MS SQL Server, Oracle, Microsoft Access/JET</li>
         <li><em>Platforms:</em>  Linux, Windows, Embedded Systems</li>
@@ -130,14 +168,18 @@ of my employer and myself.
 </div>
 
 <div class="section">
-<h2> Experience&nbsp;</h2> <a href="portfolio.htm">Link to Portfolio</a>
+
+<h2> Experience&nbsp;<a href="portfolio.htm">(Link to Portfolio)</a></h2>
+<hr>
     
 <div class="job">
-<h3>Victoria University Department of Chemistry, Freelance Programmer</h3>
-<p> <span class="dur"> March 2019 - Present</span> </p>
+<h3>Victoria University Department of Chemistry</h3>
+<h3 class="title">Freelance Programmer</h3>
+<p> <span class="dur"> March 2019 - August 2019</span> </p>
 <ul>
 	<li> We developed an application in Matlab and C++ to analyze images collected from experiments, to
-	 determine the gas/liquid ratio in a microfluidic device</li>
+	 determine the gas/liquid ratio by volume in a microfluidic device. We analyise pictures of gas bubbles
+	 travelling through tiny channels etched in plastic plates.</li>
 	<li> These experiments pertain to the polymer nanoencapsulation of medication, so as
 	 to improve the efficacy and safety of cancer treatment, as well as other potential applications </li>
 	<li> Software can analyze a batch of 200 images in seconds;
@@ -145,12 +187,12 @@ of my employer and myself.
 	<li> Considerable increase in accuracy over manual mehtod </li>
 	<li> A test program written in Java generates hundreds of test images which are analyzed by an
  		automatic regression test feature, to verify program accuracy</li>
-	<li>Next objective is to monitor live experiments and graph real-time data</li>
 </ul>
 </div>
 
 <div class="job">
-<h3>Menlo Worldwide Logistics, Programmer/IT Technician</h3>
+<h3>Menlo Worldwide Logistics</h3>
+<h3 class="title">Programmer/IT Technician</h3>
 <p> <span class="dur"> August 2007 – 2008</span> </p> 
 <ul>
     <li> Continuation of former APL position, for Thomson</li>
@@ -161,7 +203,8 @@ of my employer and myself.
 </div>
 
 <div class="job">
-<h3>APL Logistics, Programmer/IT Technician</h3>
+<h3>APL Logistics</h3>
+<h3 class="title">Programmer/IT Technician</h3>
 <p><span class="dur"> July 2005-August 2007 </span></p>
 <ul>
     <li>Order processing software. Updates for portable devices with Visual C++ 1.52</li>
@@ -177,33 +220,47 @@ of my employer and myself.
 </div>
 
 <div class="job">
-<h3>Bar Code Scanning Technologies, Programmer/Consultant</h3>
+<h3>Bar Code Scanning Technologies</h3>
+<h3 class="title">Programmer/Consultant</h3>
 <p><span class="dur"> December 2002-July 2005  </span></p>
 <ul>
-    <li>Guidance on software interface design decisions, peer review and testing of server-side code (Product Information DB project).</li>
-    <li>Technical lead on interface between serial number database and portable clients. Designed and implemented urgent software updates for Thomson Consumer Electronics. AIX, Oracle, DOS, TCP/IP client/server</li>
+    <li>Embedded terminal software was developed and employed to verify product staged at the loading dock in order to trap product recalls in final step of shipping process</li>
+    <li>Technical lead on interface and protocol design between AIX/Oracle-based database and mobile embedded system terminals. Designed and implemented urgent software updates for Thomson Consumer Electronics. AIX, Oracle, DOS, TCP/IP client/server</li>
+    <li>Peer review and testing of server-side code delivered by a major consulting company led to my complete rewrite of the AIX-side service</li>    
     <li>Rapid resolution, 24/7, on logistics and warehousing systems, PCs, portable computers</li>
 </ul>
 </div>
 
 <div class="job">
-<h3>Merit Systems Inc., Programmer</h3>
+<h3>Merit Systems Inc.</h3>
+<h3 class="title">Programmer</h3>
 <p><span class="dur"> March 2001-December 2002</span></p>
 <ul>
     <li>Developed a wireless client/server application in Visual C++ 1.52 and VB6 for 
        Thomson Consumer Electronics. </li>
-    <li>Software was used to verify the validity of outgoing product shipments and was 
-       essential to daily operations at distribution centers located in the United States, 
-       Canada, and Mexico</li>
+    <li>It was essential to daily shipping operations at distribution centers located in Indianapolis, Los Angeles,
+       Toronto, and Juarez, Mexico</li>
     <li>Developed print job management tool for Aearo Corp. in VB6, and integrated it 
-       with existing FoxPro app. Prints UPS-certified shipping labels coded in ZPL 
-       (Zebra Printer Language)</li>    
+       with existing FoxPro app. Prints bulk quantities of UPS-certified shipping labels coded in ZPL 
+       (Zebra Printer Language)</li>
 </ul>
 </div>
+</div>
+
+<div class="section">
+
+<h2> Interests</h2>
+<hr>
+
+<ul>
+	<li> Currently pursuing a ham radio operator's license </li>
+</ul>
 
 </div>
+
 <div class="section">
 <h2>References</h2>
+<hr>
 <p>
 Available upon request
 </p>
